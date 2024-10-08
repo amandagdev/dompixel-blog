@@ -18,6 +18,8 @@ import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import axios from 'axios'
 
+const apiUrl = process.env.NEXT_PUBLIC_API_URL
+
 const PostForm = () => {
   const router = useRouter()
 
@@ -49,7 +51,7 @@ const PostForm = () => {
   const handleSubmit = async (values: typeof form.values) => {
     setLoading(true)
     const data = { ...values, date: new Date().toISOString() }
-    await axios.post(`http://localhost:3000/api/posts`, data)
+    await axios.post(`${apiUrl}/posts`, data)
     setLoading(false)
     router.push('/')
   }

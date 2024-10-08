@@ -1,6 +1,6 @@
-# DompixelBlog
+# [Dom Pixel Blog](https://dompixel-blog-nine.vercel.app/)
 
-DompixelBlog é uma aplicação de blog construída utilizando Next.js. Os usuários podem visualizar, ler e criar novas postagens. O projeto é estilizado com a biblioteca de componentes Mantine, e as postagens são obtidas de uma API simulada [MockApi](https://mockapi.io/).
+DompixelBlog é uma aplicação de blog construída utilizando Next.js. Os usuários podem visualizar, ler e criar novas postagens. O projeto é estilizado com a biblioteca de componentes Mantine, as postagens e os usuários são obtidas de uma API simulada [MockApi](https://mockapi.io/).
 
 ## 🚀 Funcionalidades
 
@@ -29,12 +29,18 @@ DompixelBlog é uma aplicação de blog construída utilizando Next.js. Os usuá
 
 ### Passos para executar o projeto:
 
+[Dom Pixel Blog](https://dompixel-blog-nine.vercel.app/)
+
 1. **Clonar o repositório:**
 
    ```bash
-   git clone
+   git clone https://github.com/amandagdev/dompixel-blog.git
 
+   ```
+
+   ```bash
    cd dompixel-blog
+
    ```
 
    ```bash

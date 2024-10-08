@@ -19,6 +19,8 @@ import axios from 'axios'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 
+const apiUrl = process.env.NEXT_PUBLIC_API_URL
+
 const SignUpForm = () => {
   const router = useRouter()
   const { setUser } = useUser()
@@ -32,7 +34,7 @@ const SignUpForm = () => {
 
   const createUser = async ({ email, name, password }: User) => {
     try {
-      const response = await axios.post('http://localhost:3000/api/users', {
+      const response = await axios.post(`${apiUrl}/users`, {
         email,
         name,
         password

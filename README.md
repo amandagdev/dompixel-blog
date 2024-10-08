@@ -38,15 +38,24 @@ DompixelBlog é uma aplicação de blog construída utilizando Next.js. Os usuá
 
    ```
 
+2. **Navegar para o repositório:**
+
    ```bash
    cd dompixel-blog
 
    ```
 
+3. **Criar .env com seu localhost:**
+
+   ```.env
+      NEXT_PUBLIC_API_URL=http://localhost:3000/api
+   ```
+
+4. **Instalar dependencias:**
    ```bash
    npm install
    ```
-
+5. **Rodar o projeto:**
    ```bash
    npm run dev
    ```

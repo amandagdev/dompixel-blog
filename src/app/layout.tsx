@@ -1,26 +1,28 @@
-// Import styles of packages that you've installed.
-// All packages except `@mantine/hooks` require styles imports
 import '@mantine/core/styles.css'
-
 import { ColorSchemeScript, MantineProvider } from '@mantine/core'
+import type { ReactNode } from 'react'
+import './globals.css'
+import Header from '@/components/header/header.component'
+import { UserContextProvider } from '@/context/user.context'
 
 export const metadata = {
-  title: 'My Mantine app',
-  description: 'I have followed setup instructions carefully'
+  title: 'Dom Pixel Blog',
+  description: 'Welcome to our blog'
 }
 
-export default function RootLayout({
-  children
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
         <ColorSchemeScript />
       </head>
       <body>
-        <MantineProvider>{children}</MantineProvider>
+        <MantineProvider>
+          <UserContextProvider>
+            <Header />
+            {children}
+          </UserContextProvider>
+        </MantineProvider>
       </body>
     </html>
   )

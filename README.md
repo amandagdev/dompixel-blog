@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DompixelBlog
 
-## Getting Started
+DompixelBlog é uma aplicação de blog construída utilizando Next.js. Os usuários podem visualizar, ler e criar novas postagens. O projeto é estilizado com a biblioteca de componentes Mantine, e as postagens são obtidas de uma API simulada [MockApi](https://mockapi.io/).
 
-First, run the development server:
+## 🚀 Funcionalidades
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Página inicial:** Lista todas as postagens de blog com título, data e imagem de capa.
+- **Página de detalhes:** Exibe o conteúdo completo da postagem ao clicar em um item na página inicial.
+- **Criação de postagens:** Permite que os usuários criem novas postagens com título, texto e imagem de capa.
+- **Responsividade:** Layout totalmente adaptável para diferentes tamanhos de tela.
+- **Controle de estado local:** Gerencia as postagens e formulários diretamente no estado do Next.js.
+- **bcryptjs** Encripitar a senha do usuário na hora do cadastro
+- **eslint** Garantia de que o código segue as melhores práticas e está bem formatado.
+- **husky** Garantia de que todas as verificações de qualidade do código sejam executadas antes dos commits.
+- **GitHub action** Integração contínua para execução automática de testes e análise estática de código.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Bônus 🎁
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Autenticação básica:** Apenas usuários autenticados podem criar postagens.
+- **Pesquisa:** Sistema de busca para procurar postagens por título ou conteúdo.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tecnologias Utilizadas
 
-## Learn More
+- [Next.js](https://nextjs.org/)
+- [Mantine](https://mantine.dev/) (componentização e estilização)
+- Fetch/Axios (consumo de API)
 
-To learn more about Next.js, take a look at the following resources:
+## 📦 Como Executar o Projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Passos para executar o projeto:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clonar o repositório:**
 
-## Deploy on Vercel
+   ```bash
+   git clone
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   cd dompixel-blog
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm install
+   ```
+
+   ```bash
+   npm run dev
+   ```
